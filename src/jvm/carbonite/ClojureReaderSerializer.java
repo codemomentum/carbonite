@@ -6,6 +6,7 @@ import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.Serializer;
 import com.esotericsoftware.kryo.io.Input;
 import com.esotericsoftware.kryo.io.Output;
+import java.io.Serializable;
 
 /** User: sritchie Date: 1/20/12 Time: 3:57 PM
  *
@@ -15,7 +16,7 @@ import com.esotericsoftware.kryo.io.Output;
  * likely to work in many cases.
  *
  */
-public class ClojureReaderSerializer extends Serializer {
+public class ClojureReaderSerializer extends Serializer implements Serializable{
   final Var cljRead;
   final Var cljPrint;
 

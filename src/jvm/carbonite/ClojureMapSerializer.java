@@ -8,8 +8,9 @@ import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.Serializer;
 import com.esotericsoftware.kryo.io.Input;
 import com.esotericsoftware.kryo.io.Output;
+import java.io.Serializable;
 
-public class ClojureMapSerializer extends Serializer {
+public class ClojureMapSerializer extends Serializer implements Serializable {
   final Var writeMap;
   final Var readMap;
 

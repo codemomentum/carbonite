@@ -1,10 +1,10 @@
-(defproject com.twitter/carbonite "1.4.0"
+(defproject com.twitter/carbonite "1.4.1-SNAPSHOT"
   :source-paths ["src/clj"]
   :java-source-paths ["src/jvm"]
   :javac-options ["-source" "1.6" "-target" "1.6"]
   :description "Write Clojure data to and from bytes using Kryo."
   :repositories {"conjars" "http://conjars.org/repo/"}
-  :dependencies [[org.clojure/clojure "1.5.1"]
+  :dependencies [[org.clojure/clojure "1.6.0"]
                  [com.esotericsoftware.kryo/kryo "2.21"]
                  [com.twitter/chill-java "0.3.5"]]
   :global-vars {*warn-on-reflection* true}

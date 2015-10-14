@@ -6,9 +6,10 @@ import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.Serializer;
 import com.esotericsoftware.kryo.io.Input;
 import com.esotericsoftware.kryo.io.Output;
+import java.io.Serializable;
 
 /** User: sritchie Date: 1/21/12 Time: 8:19 PM */
-public class StringSeqSerializer extends Serializer {
+public class StringSeqSerializer extends Serializer implements Serializable{
   final Var readStringSeq;
   final Var printStringSeq;
 

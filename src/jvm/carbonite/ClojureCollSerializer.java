@@ -5,9 +5,10 @@ import clojure.lang.Var;
 import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.Serializer;
 import com.esotericsoftware.kryo.io.Output;
+import java.io.Serializable;
 
 /** User: sritchie Date: 1/21/12 Time: 8:01 PM */
-public abstract class ClojureCollSerializer extends Serializer {
+public abstract class ClojureCollSerializer extends Serializer implements Serializable {
   final Var printCollection;
 
   public ClojureCollSerializer() {
